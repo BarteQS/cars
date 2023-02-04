@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --clr-orange-600: hsl(31 77% 52%);
+  --clr-cyan-900: hsl(184 100% 22%);
+  --clr-dark-cyan-900: hsl(179 100% 13%);
+  --clr-transparent-white-50: hsl(0 0% 100% 0.75);
+  --clr-light-gray-100: hsl(0 0% 95%); /* Background, buttons, etc. */
+
+  --ff-title: "Big Shoulders Display", cursive;
+  --ff-default: "Lexend Deca", sans-serif;
+}
+
+/* CSS Reset - Start */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+canvas,
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove the smooth scrolling for people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+
+/* Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* CSS Reset - End */
+
+p {
+  font-size: 0.938rem;
+}
+
+body {
+  font-family: var(--ff-default);
+  font-weight: 400;
+}
